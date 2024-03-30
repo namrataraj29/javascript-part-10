@@ -108,7 +108,46 @@ input.addEventListener("keydown",function(event){
     console.log("code=",event.code)
     console.log("key was pressed")
 })
+// form= document.querySelector("form")
+// form.addEventListener("submit",function(){
+//     event.preventDefault()
+//     console.log("form registered")
+//     alert("form registered")
+// })
+//extracting data from form
+
+// let form=document.querySelector("form")
+// form.addEventListener("submit",function(event){
+//     event.preventDefault()
+//     console.log("submitted")
+
+//     let input=document.querySelector("input")
+   
+//     console.dir(input)
+//     console.log(input.innerText)
+//     console.dir(input.value)
+// })
+
+let form=document.querySelector("form")
+form.addEventListener("submit",function(event){
+    event.preventDefault()
+    // let user=document.querySelector("#user")
+    // let pass= document.querySelector("#pass")
+    // console.log(user.value)
+    // console.log(pass.value)
+    // alert(`hi ${user.value} your password in set to ${pass.value}`)
+// console.dir(form)
+let user= document.querySelector("#user")
+// user.addEventListener("change",function(){
+//     console.log("input changed")
+//     console.log("final value:",user.value)
+// })
+user.addEventListener("input",function(){
+    console.log("input added")
+    console.log("input:",user.value)
+})
 
 
 
+})
 
